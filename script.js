@@ -92,3 +92,21 @@ function saveReport(event) {
     localStorage.setItem('incidentReport', JSON.stringify(reportData));
     alert('Report saved locally.');
 }
+
+function loadReport() {
+    const savedReport = JSON.parse(localStorage.getItem('incidentReport'));
+    if (savedReport) {
+        const savedReportDiv = document.getElementById('saved-report');
+        savedReportDiv.innerHTML = '<h2>Saved Report</h2>';
+        for (const key in savedReport) {
+            const values = savedReport[key];
+            values.forEach(value => {
+                const para = document.createElement('p');
+                para.textContent = `${key}: ${value}`;
+                savedReportDiv.appendChild(para);
+            });
+        }
+    } else {
+        alert('No saved report found.');
+    }
+}
