@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incident Reporting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Logo">
+        <h1>Incident Reporting System</h1>
+    </header>
+    <main>
+        <div id="report-form">
+            <h2>Incident Report</h2>
+            <form id="incidentForm">
+                <section id="peopleInvolvedSection">
+                    <h3>People Involved</h3>
+                    <div id="peopleInvolved"></div>
+                    <button type="button" onclick="addPerson()">Add Person</button>
+                </section>
+                <section id="customSections">
+                    <h3>Custom Sections</h3>
+                </section>
+                <button type="button" onclick="addSection()">Add Section</button>
+                <button type="submit">Submit Report</button>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
