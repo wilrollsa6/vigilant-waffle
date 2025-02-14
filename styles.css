@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header img {
+    height: 50px;
+    vertical-align: middle;
+}
+
+header h1 {
+    display: inline;
+    margin-left: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+#report-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
